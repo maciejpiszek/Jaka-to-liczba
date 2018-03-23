@@ -33,7 +33,7 @@ public class GraLiczbowa extends JFrame implements ActionListener {
 		setTitle("ZGADNIJ JAKA TO LICZBA");
 		setLayout(null);
 		
-		labelIntro1 = new JLabel("Wylosowana zosta≥a liczba od 1 do 100");
+		labelIntro1 = new JLabel("Wylosowana zostala liczba od 1 do 100");
 		labelIntro1.setBounds(40, 40, 400, 20);
 		labelIntro1.setForeground(Color.DARK_GRAY);
 		labelIntro1.setFont(new Font("Arial", Font.BOLD, 15));
@@ -45,7 +45,7 @@ public class GraLiczbowa extends JFrame implements ActionListener {
 		labelIntro2.setFont(new Font("Arial", Font.BOLD, 15));
 		add(labelIntro2);
 		
-		labelIntro3 = new JLabel("Masz 6 prÛb. Powodzenia!");
+		labelIntro3 = new JLabel("Masz 6 prob. Powodzenia!");
 		labelIntro3.setBounds(40, 100, 400, 20);
 		labelIntro3.setForeground(Color.DARK_GRAY);
 		labelIntro3.setFont(new Font("Arial", Font.BOLD, 15));
@@ -63,7 +63,7 @@ public class GraLiczbowa extends JFrame implements ActionListener {
 		add(textLiczba);
 		textLiczba.addActionListener(this);
 		
-		buttonSprawdz = new JButton("SPRAWDè");
+		buttonSprawdz = new JButton("SPRAWDZ");
 		buttonSprawdz.setBounds(145, 300, 100, 30);
 		add(buttonSprawdz);
 		buttonSprawdz.addActionListener(this);
@@ -129,20 +129,20 @@ public class GraLiczbowa extends JFrame implements ActionListener {
 				
 					if (typ<liczba) {
 				
-					labelOdpowiedz1.setText("Liczba jest wiÍksza, niø " + typ);		
-					labelOdpowiedz2.setText("Pozosta≥o(y) " + (licznik) + " prÛb(y).");
+					labelOdpowiedz1.setText("Liczba jest wieksza, niz " + typ);		
+					labelOdpowiedz2.setText("Pozostalo(y) " + (licznik) + " prob(y).");
 					textLiczba.setText("");
 					licznik--;
 					
 					} else if (typ>liczba) {
-					labelOdpowiedz1.setText("Liczba jest mniejsza, niø " + typ);
-					labelOdpowiedz2.setText("Pozosta≥o(y) " + (licznik) + " prÛb(y).");
+					labelOdpowiedz1.setText("Liczba jest mniejsza, niz " + typ);
+					labelOdpowiedz2.setText("Pozostalo(y) " + (licznik) + " prob(y).");
 					textLiczba.setText("");
 					licznik--;
 					
 					} else if (typ==liczba) {
 					
-					labelOdpowiedz3.setText("Brawo, zgad≥eú! Liczba to: " + liczba);					
+					labelOdpowiedz3.setText("Brawo, zgadles! Liczba to: " + liczba);					
 					labelOdpowiedz1.setVisible(false);
 					labelOdpowiedz2.setVisible(false);
 					buttonSprawdz.setVisible(false);
@@ -153,7 +153,7 @@ public class GraLiczbowa extends JFrame implements ActionListener {
 					
 					if (typ==liczba) {
 						
-						labelOdpowiedz3.setText("Brawo, zgad≥eú! Liczba to: " + liczba);					
+						labelOdpowiedz3.setText("Brawo, zgadles! Liczba to: " + liczba);					
 						labelOdpowiedz1.setVisible(false);
 						labelOdpowiedz2.setVisible(false);
 						buttonSprawdz.setVisible(false);
@@ -163,7 +163,7 @@ public class GraLiczbowa extends JFrame implements ActionListener {
 						} else {
 			
 						labelOdpowiedz2.setVisible(false);
-						labelOdpowiedz1.setText("Niestety nie uda≥o Ci siÍ. To by≥a liczba to: " + liczba);
+						labelOdpowiedz1.setText("Niestety nie udalo Ci sie. To byla liczba: " + liczba);
 						buttonSprawdz.setVisible(false);
 						buttonWyjdz.setVisible(true);
 						buttonJeszczeRaz.setVisible(true);
