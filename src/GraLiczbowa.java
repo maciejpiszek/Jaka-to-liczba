@@ -32,6 +32,7 @@ public class GraLiczbowa extends JFrame implements ActionListener {
 		setSize(410,600);
 		setTitle("ZGADNIJ JAKA TO LICZBA");
 		setLayout(null);
+		setResizable(false);
 		
 		labelIntro1 = new JLabel("Wylosowana zostala liczba od 1 do 100");
 		labelIntro1.setBounds(40, 40, 400, 20);
